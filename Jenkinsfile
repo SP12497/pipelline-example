@@ -12,4 +12,8 @@ pipeline{
             }
         }
     }
+
+    post{
+        sh "build success"
+    }
 }
