@@ -17,7 +17,9 @@ pipeline{
         always {
             sh "echo always print"
         }
-        sh "build success"
+        success {
+            sh "build success"
+        }
 
         failure{
             sh "echo failure print"
