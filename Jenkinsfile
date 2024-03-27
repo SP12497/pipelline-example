@@ -14,6 +14,13 @@ pipeline{
     }
 
     post{
+        always {
+            sh "echo always print"
+        }
         sh "build success"
+
+        failure{
+            sh "echo failure print"
+        }
     }
 }
